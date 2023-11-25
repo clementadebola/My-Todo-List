@@ -1,0 +1,94 @@
+#Add-Task{
+    border-radius: 5px;
+    border-color: transparent;
+    /* font-size: 1.2rem ; */
+    color: rgb(187, 43, 151);
+    height: 30px;
+}
+#Add-Task:hover{
+    background-color: pink;
+}
+#text{
+   background-color: rgb(48, 38, 38);
+   width: 300px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+body{
+    background-color: gray;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+#tasks .tasks{
+    display: flex;
+    background-color: rgb(21, 37, 37);
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#tasks .tasks .content{
+    flex: 1 1 0%;
+}
+#tasks .tasks .content .text{
+    color: white;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+#tasks .tasks .content .text:not(:read-only) {
+    color:pink;
+}
+#tasks .tasks .actions{
+    display: flex;
+    margin: 0 -0.05rem;
+}
+
+.tasks .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+.tasks .actions button:hover{
+    opacity: 0.8;
+}
+.tasks .actions button:active{
+    opacity: 0.6;
+}
+.tasks .actions .edit{
+    background-image: linear-gradient(to right, pink,
+    purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tasks .actions .delete{
+    color: crimson;
+}
